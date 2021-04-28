@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0px;
+  background-color: white;
+  color: white;
+  height: 100vh;
+}
+
+.page {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 150px auto 25px;
+  gap: 0px 10px;
+  grid-template-areas:
+    "top top"
+    "sidebar currently-in"
+    "sidebar footer";
+}
+
+.top {
+  grid-area: top;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #5885af;
+}
+
+.enrolledList {
+  background-color: #41729f;
+  padding: 10px;
+}
+
+.currently-in {
+  grid-area: currently-in;
+  color: gray;
+  padding: 10px;
+}
+
+.card-area {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+  grid-gap: 10px;
+}
+
+.restroom-list {
+  background-color: #5885af;
+  padding: 10px;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+  color: darkgray;
+  font-family: sans-serif;
+}

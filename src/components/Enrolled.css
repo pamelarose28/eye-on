@@ -1,0 +1,23 @@
+.enrolled {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  background-color: white;
+  margin: 10px;
+  color: green;
+  border: 2px solid lightgray;
+  border-radius: 8px;
+  box-shadow: 5px 5px 16px 3px rgba(0, 0, 0, 0.18);
+}
+
+.enrolledName {
+  font-family: sans-serif;
+  color: darkgray;
+  font-weight: bold;
+}
+
+.check {
+  margin: 5px;
+  height: 30px;
+  color: green;
+}

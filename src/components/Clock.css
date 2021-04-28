@@ -1,0 +1,15 @@
+.currentTime {
+  box-sizing: border-box;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  width: 300px;
+  height: 100px;
+  background-color: #5885af;
+  border: 5px solid #41729f;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+}
