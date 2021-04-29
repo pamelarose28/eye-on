@@ -1,6 +1,7 @@
 .atRestroom {
+  position: relative;
   box-sizing: border-box;
-  width: 160px;
+  width: 260px;
   height: 80px;
   background-color: white;
   margin: 10px;
@@ -24,23 +25,20 @@
 }
 
 .manage {
-  display: flex;
-  justify-content: space-around;
+ 
 }
 
-button {
-  margin-top: 6px;
-  padding: 3px;
-}
-
-.btn-red {
+.time-stamp {
   color: red;
-  font-size: 1.3rem;
-  font-weight: bold;
-  background-color: white;
+  font-size: 14px;
+  position: absolute;
+  top: 40px;
 }
 
 .btn-green {
   background-color: green;
-  width: 60%;
+  width: 80px;
+  margin-top: 6px;
+  padding: 3px;
+  float: right;
 }

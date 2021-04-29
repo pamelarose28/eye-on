@@ -8,7 +8,7 @@ function Enrolled(props) {
       <button className="check" onClick={props.handleClick}>
         <CheckIcon />
       </button>
-      <div className="enrolledName">{props.fName}</div>
+      <div className="enrolledName">{props.fName} {props.lName}</div>
     </div>
   );
 }

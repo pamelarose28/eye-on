@@ -5,10 +5,13 @@ function AtRestroom(props) {
   return (
     <div className="atRestroom">
       <div className="atRestroomName">
-        <h3>{props.fName}</h3>
+        <h3>{props.fName} {props.lName}</h3>
       </div>
       <div className="manage">
-        <div className="btn-red">{props.time?.toLocaleTimeString()}</div>
+        <div className="time-stamp"><span style={{color: 'gray'}}>Out at:  </span>{props.time?.toLocaleTimeString(navigator.language, {
+          hour: "2-digit",
+          minute: "2-digit"
+        })}</div>
         <button className="btn-green" onClick={props.handleClick}>
           Returned
         </button>

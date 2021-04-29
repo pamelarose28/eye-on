@@ -5,7 +5,6 @@ import AtRestroom from "./AtRestroom.jsx";
 import Header from "./Header.jsx";
 import namesData from "../names.js";
 import Footer from "./Footer";
-import Clock from "./Clock.jsx";
 
 function App() {
   const [names, updateNames] = useState(namesData);
@@ -54,6 +53,7 @@ function App() {
             .map((person) => (
               <Enrolled
                 fName={person.fName}
+                lName={person.lName}
                 id={person.id}
                 handleClick={() => updateStatus(person.id, "present")}
               />
@@ -66,6 +66,7 @@ function App() {
             .map((person) => (
               <AtRestroom
                 fName={person.fName}
+                lName={person.lName}
                 id={person.id}
                 time={person.lastUpdated}
                 handleClick={() => updateStatus(person.id, "present")}
