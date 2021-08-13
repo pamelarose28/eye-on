@@ -28,7 +28,7 @@ body {
 
 .sidebar {
   grid-area: sidebar;
-  background-color: #5885af;
+  background-color: #41729f;
 }
 
 .enrolledList {
@@ -49,7 +49,7 @@ body {
 }
 
 .restroom-list {
-  background-color: #5885af;
+  background-color: #41729f;
   padding: 10px;
 }
 

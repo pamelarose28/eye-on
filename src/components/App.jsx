@@ -24,7 +24,7 @@ function App() {
   const [cTime, setTime] = useState(
     new Date().toLocaleTimeString(navigator.language, {
       hour: "2-digit",
-      minute: "2-digit"
+      minute: "2-digit",
     })
   );
 
@@ -33,7 +33,7 @@ function App() {
       setTime(
         new Date().toLocaleTimeString(navigator.language, {
           hour: "2-digit",
-          minute: "2-digit"
+          minute: "2-digit",
         })
       );
     }, 1000);
@@ -48,6 +48,7 @@ function App() {
       <div className="sidebar">
         <div className="enrolledList">
           <h2>Enrolled:</h2>
+          <hr></hr>
           {names
             .filter((person) => person.status === "absent")
             .map((person) => (
@@ -61,6 +62,7 @@ function App() {
         </div>
         <div className="restroom-list">
           <h2>At Restroom:</h2>
+          <hr></hr>
           {names
             .filter((person) => person.status === "restroom")
             .map((person) => (

@@ -18,19 +18,10 @@
   font-weight: bold;
 }
 
-.time-away {
-  font-size: 20px;
-  color: red;
-  font-weight: bold;
-}
-
-.manage {
- 
-}
-
 .time-stamp {
   color: red;
-  font-size: 14px;
+  font-size: 18px;
+  font-weight: bold;
   position: absolute;
   top: 40px;
 }
